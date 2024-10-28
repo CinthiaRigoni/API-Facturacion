@@ -50,8 +50,8 @@ const generarComprobante = async (cuitCliente, ptoVenta, comprobante, concepto, 
         console.log('Response from AFIP:', res);
 
         //Retornamos CAE y Vencimiento
-        return { cae: res.CAE, vencimiento: res.CAEFchVto };
-        
+        return { cae: res.CAE, vencimiento: res.CAEFchVto, nroFactura };
+
     } catch (error) {
         console.error('Error generating voucher:', error);
         throw error; // Esto permitirá que el controlador capture y maneje el error
