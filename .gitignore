@@ -1,0 +1,20 @@
+# 1. Dependencias de Node y logs de instalacion
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# 2. Archivos Secretos y Variables de Entorno (¡CRUCIAL!)
+.env 
+
+# 3. Certificados de AFIP (No deben ser públicos)
+/certs/*.crt
+/certs/*.key
+
+# 4. Archivos de Base de Datos Local (SQLite)
+*.sqlite
+*.sqlite3
+
+# 5. Archivos de sistema operativo y IDE (Opcional)
+.DS_Store
+.vscode
+*.log
